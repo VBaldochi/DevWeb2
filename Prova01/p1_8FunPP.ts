@@ -1,56 +1,56 @@
 // Exercício de Funções com Parâmetros Padrão - Calculadora Simples: 
 // Implemente uma função de calculadora que pode realizar operações de adição, subtração, multiplicação e divisão com valores padrão de 0 se nenhum valor for fornecido. 
 
-namespace FunParamPadrao {
+namespace FuncParamPadrao {
     
-    function calcsoma (v1:number, v2:number) {
-        if (v1 == null) {
-            v1 = 0
+    function calcularSoma (valor1:number, valor2:number) {
+        if (valor1 == null) {
+            valor1 = 0
         }
-        if (v2 == null) {
-            v1 = 0
+        if (valor2 == null) {
+            valor1 = 0
         }
-         v1 + v2
-        return v1 + v2;
+         valor1 + valor2
+        return valor1 + valor2;
     }
-    function calcsubtracao (v1:number, v2:number) {
-        if (v1 == null) {
-            v1 = 0
+    function calcularSubtracao (valor1:number, valor2:number) {
+        if (valor1 == null) {
+            valor1 = 0
         }
-        if (v2 == null) {
-            v1 = 0
+        if (valor2 == null) {
+            valor1 = 0
         }
-        return v1 - v2;
+        return valor1 - valor2;
     }
-    function calcmultiplicacao (v1:number, v2:number) {
-        if (v1 == null) {
-            v1 = 0
+    function calcularMultiplicacao (valor1:number, valor2:number) {
+        if (valor1 == null) {
+            valor1 = 0
         }
-        if (v2 == null) {
-            v1 = 0
+        if (valor2 == null) {
+            valor1 = 0
         }
         
-        return v1 * v2;
+        return valor1 * valor2;
     }
-    function calcdivisao (v1:number, v2:number) {
-        if (v1 == null) {
-            v1 = 0
+    function calcularDivisao (valor1:number, valor2:number) {
+        if (valor1 == null) {
+            valor1 = 0
         }
-        if (v2 == null) {
-            v1 = 1 // Não existe div por 0
+        if (valor2 == null) {
+            valor1 = 1 // Não existe div por 0
         }
-        return v1 / v2;
+        return valor1 / valor2;
     }
 
-    let resSoma: number = calcsoma(3, 7);
-    console.log (`A soma dos valores é de ${resSoma}`);
+    let resultadoSoma: number = calcularSoma(3, 7);
+    console.log (`A soma dos valores é de ${resultadoSoma}`);
 
-    let resSub: number = calcsubtracao(3, 7);
-    console.log (`A diferença dos valores é de ${resSub}`);
+    let resultadoSub: number = calcularSubtracao(3, 7);
+    console.log (`A diferença dos valores é de ${resultadoSub}`);
 
-    let resMult: number = calcmultiplicacao(3, 7);
-    console.log (`O produto dos valores é de ${resMult}`);
+    let resultadoMult: number = calcularMultiplicacao(3, 7);
+    console.log (`O produto dos valores é de ${resultadoMult}`);
 
-    let resDiv: number = calcdivisao(3, 7);
-    console.log (`A divisão entre os valores é de ${resDiv}`);
+    let resultadoDiv: number = calcularDivisao(3, 7);
+    console.log (`A divisão entre os valores é de ${resultadoDiv}`);
 }

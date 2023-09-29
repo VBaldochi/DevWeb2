@@ -2,14 +2,14 @@
 // Crie um programa que recebe uma lista de notas de estudantes e calcula a média das notas. 
 
 namespace Lista {
-    let notas: number[] = [9, 2.5, 7, 6.5];
-    let soma: number = 0
+    let notasAlunos: number[] = [9, 2.5, 7, 6.5];
+    let somatorio: number = 0
 
-        for (let i = 0; i < notas.length; i++) {
-        soma += (notas[i]);
-        }
+    for (let indice = 0; indice < notasAlunos.length; indice++) {
+        somatorio += (notasAlunos[indice]);
+    }
 
-    let media:number = soma / (notas.length);
+    let mediaNotas:number = somatorio / (notasAlunos.length);
 
-    console.log(`A Média das notas é: ${media}`);
+    console.log(`A Média das notas é: ${mediaNotas}`);
 }

@@ -2,9 +2,9 @@
 // Escreva um programa que recebe dois números inteiros e exibe a soma deles. 
 
 namespace ExBasico {
-    let v1:number, v2:number;
-    v1 = 7;
-    v2 = 8;
-    let res = v1+v2;
-    console.log (`A soma entre os 2 valores é: ${res}`)
+    let valor1:number, valor2:number;
+    valor1 = 7;
+    valor2 = 8;
+    let resultado = valor1 + valor2;
+    console.log (`A soma entre os 2 valores é: ${resultado}`)
 }

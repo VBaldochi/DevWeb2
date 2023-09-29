@@ -2,16 +2,16 @@
 // Implemente uma função que calcula a área de um retângulo com base na largura e altura fornecidas como argumentos. 
 
 namespace FunSimples {
-    function calcArea(comp:number, larg:number) {
-        let area:number = 0;
-        area = comp*larg;
-        return area;
+    function calcularArea(comprimento:number, largura:number) {
+        let areaRetangulo:number = 0;
+        areaRetangulo = comprimento * largura;
+        return areaRetangulo;
     }
 
-    let comp: number = 20;
-    let larg: number = 47;
+    let comprimentoRetangulo: number = 20;
+    let larguraRetangulo: number = 47;
 
-    let areaf = calcArea(comp, larg);
+    let areaFinal = calcularArea(comprimentoRetangulo, larguraRetangulo);
 
-    console.log(`A área é de: ${areaf} cm²`)
+    console.log(`A área é de: ${areaFinal} cm²`)
 }

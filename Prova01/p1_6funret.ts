@@ -1,18 +1,17 @@
 // Exercício de Funções com Retorno - Fatorial: 
 //Escreva uma função que calcula o fatorial de um número inteiro. 
 
-namespace funRet {
-    function fatorial (num:number) {
-        let fat:number = 1;
-        for (let i=num; i >= 1; i--) {
-            fat = fat * i
+namespace funcRetorno {
+    function calcularFatorial (numero:number) {
+        let fatorialNumero:number = 1;
+        for (let contador=numero; contador >= 1; contador--) {
+            fatorialNumero = fatorialNumero * contador
         }
-        return fat;
+        return fatorialNumero;
     } 
 
-    let num: number = 4;
-    let resul: number = fatorial(num);
+    let numeroFatorial: number = 4;
+    let resultadoFatorial: number = calcularFatorial(numeroFatorial);
 
-    console.log (`O fatorial do número ${num} é: ${resul}`);
-
+    console.log (`O fatorial do número ${numeroFatorial} é: ${resultadoFatorial}`);
 }
