@@ -24,6 +24,9 @@ createApp({
           case "=":
             this.lidarIgual();
             break;
+          case ".":
+            this.lidarPonto();
+            break;
           default:
             break;
         }
@@ -53,26 +56,37 @@ createApp({
       this.operador = operador;
     },
 
+    lidarPonto() {
+      if (!this.display.includes(".")) {
+        this.display += ".";
+      }
+    },
+
     lidarIgual() {
-        const resultado = this.calcular(Number(this.numeroAnterior), Number(this.numeroAtual), this.operador);
+        const resultado = this.calcular(parseFloat(this.numeroAnterior), parseFloat(this.numeroAtual), this.operador);
         this.display = resultado.toString();
         this.numeroAnterior = null;
         this.numeroAtual = null;
         this.operador = null;
       },
-    calcular(numeroAnterior, numeroAtual, operador) {
-      switch (operador) {
-        case "+":
-          return  numeroAnterior + numeroAtual;
-        case "-":
-          return  numeroAnterior - numeroAtual;
-        case "*":
-          return  numeroAnterior * numeroAtual;
-        case "/":
-          return  numeroAnterior / numeroAtual;
-        default:
-          return 0;
-      }
-    },
+      calcular(numeroAnterior, numeroAtual, operador) {
+        let resultado;
+        switch (operador) {
+          case "+":
+            resultado = numeroAnterior + numeroAtual;
+            break;
+          case "-":
+            resultado = numeroAnterior - numeroAtual;
+            break;
+          case "*":
+            resultado = numeroAnterior * numeroAtual;
+            break;
+          case "/":
+            resultado = numeroAnterior / numeroAtual;
+            break;
+          default:
+            return 0;
+        }
+      },
   },
 }).mount("#app");

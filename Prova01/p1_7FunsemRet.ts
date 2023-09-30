@@ -1,7 +1,7 @@
 // Exercício de Funções sem Retorno - Imprimir Padrão: 
 // Crie uma função que imprime um padrão simples, como uma pirâmide de asteriscos. 
 
-namespace FunSemRet {
+namespace FuncSemRetorno {
     function imprimirPadrao(numLinhas: number) {
       for (let contadorLinha = 1; contadorLinha <= numLinhas; contadorLinha++) {
           let linhaEstrelas:string = '';
